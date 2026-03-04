@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: trading212-api
+Version: 0.1.0
+Summary: Python wrapper for the Trading 212 REST API (Invest and Stocks ISA)
+Author: Trading 212 API Contributors
+License: MIT
+Keywords: trading212,trading,api,invest,stocks,isa
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+
 # trading212-api
 
 Python wrapper for the **Trading 212 REST API** (Invest and Stocks ISA accounts).
