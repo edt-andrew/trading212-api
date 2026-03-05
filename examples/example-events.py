@@ -10,7 +10,7 @@ import json
 import os
 from pathlib import Path
 
-import trading212api
+import t212
 
 
 def main() -> None:
@@ -20,10 +20,10 @@ def main() -> None:
         print("Set TRADING212_API_KEY and TRADING212_API_SECRET environment variables.")
         raise SystemExit(1)
 
-    client = trading212api.Trading212Client(
+    client = t212.Trading212Client(
         api_key=api_key,
         api_secret=api_secret,
-        base_url=trading212api.DEFAULT_LIVE_URL,
+        base_url=t212.DEFAULT_DEMO_URL,
     )
     dividends = client.get_dividends(limit=5)
     historical_orders = client.get_historical_orders(limit=5)

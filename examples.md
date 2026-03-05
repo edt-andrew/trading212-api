@@ -1,6 +1,6 @@
 # Examples
 
-The `examples/` folder contains small Python scripts that demonstrate the **trading212-api** client by calling Trading 212 API endpoints and saving the JSON response to a file.
+The `examples/` folder contains small Python scripts that demonstrate the **t212** client (`import t212`) by calling Trading 212 API endpoints and saving the JSON response to a file.
 
 ## What they are
 

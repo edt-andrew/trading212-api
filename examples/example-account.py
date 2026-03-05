@@ -9,7 +9,7 @@ import json
 import os
 from pathlib import Path
 
-import trading212api
+import t212
 
 def main() -> None:
     api_key = os.environ.get("TRADING212_API_KEY")
@@ -18,10 +18,10 @@ def main() -> None:
         print("Set TRADING212_API_KEY and TRADING212_API_SECRET environment variables.")
         raise SystemExit(1)
 
-    client = trading212api.Trading212Client(
+    client = t212.Trading212Client(
         api_key=api_key,
         api_secret=api_secret,
-        base_url=trading212api.DEFAULT_LIVE_URL,
+        base_url=t212.DEFAULT_DEMO_URL,
     )
     summary = client.get_account_summary()
     out_path = Path(__file__).resolve().parent / "example-account-response.json"

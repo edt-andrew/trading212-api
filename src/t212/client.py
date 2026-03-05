@@ -161,7 +161,7 @@ class Trading212Client:
                 )
         if response.status_code >= 400:
             raise Trading212APIError(
-                f"API401 error401 error: {response.status_code} {response.text}",
+                f"API error: {response.status_code}",
                 status_code=response.status_code,
                 body=response.text,
             )

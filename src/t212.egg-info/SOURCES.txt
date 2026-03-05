@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/t212.egg-info/PKG-INFO
+src/t212.egg-info/SOURCES.txt
+src/t212.egg-info/dependency_links.txt
+src/t212.egg-info/requires.txt
+src/t212.egg-info/top_level.txt
+src/trading212api/__init__.py
+src/trading212api/client.py
+src/trading212api/models.py

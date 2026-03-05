@@ -1,8 +1,8 @@
 """
 Trading 212 REST API client for Invest and Stocks ISA accounts.
 
-Install: pip install trading212-api
-Usage:   import trading212api
+Install: pip install pyt212
+Usage:   import t212
 """
 
 from .client import (
